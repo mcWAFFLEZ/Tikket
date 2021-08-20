@@ -6,6 +6,8 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
+    "start": "cd packages/server && start cmd && cd ../client && npm start",
+    "run-server": "cd packages/client && start cmd",
     "test": "lerna run test",
     "new-version": "lerna version --conventional-commints --yes",
     "diff": "lerna diff"
